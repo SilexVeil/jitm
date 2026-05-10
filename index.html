@@ -46,7 +46,7 @@
             --glass-border: rgba(255, 255, 255, 0.6);
             --shadow-sm: 0 2px 12px rgba(10, 10, 46, 0.06);
             --shadow-md: 0 8px 32px rgba(10, 10, 46, 0.1);
-            --shadow-lg: 0 20px 60px rgba(10, 10, 46, 0.15);
+            --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.15);
             --shadow-gold: 0 8px 32px rgba(201, 168, 76, 0.25);
             --gradient-hero: linear-gradient(135deg, rgba(10, 10, 46, 0.88) 0%, rgba(26, 26, 78, 0.82) 40%, rgba(107, 78, 158, 0.7) 100%);
             --gradient-card: linear-gradient(145deg, rgba(255, 255, 255, 0.7) 0%, rgba(240, 237, 247, 0.8) 100%);
@@ -1400,7 +1400,7 @@
         <img src="" alt="Gallery image" id="lightboxImg">
     </div>
 
-    <!-- Contact Section -->
+   <!-- Contact Section – Updated with WhatsApp button -->
     <section class="section" id="contact">
         <div class="container">
             <div class="section-header reveal">
@@ -1408,20 +1408,21 @@
                 <h2 class="section-title">We'd Love to Hear From You</h2>
             </div>
             <div class="contact-grid">
-                <div class="glass-card contact-form reveal">
-                    <h3 style="font-family:var(--font-heading);letter-spacing:0.5px;margin-bottom:1rem;">Send a Message</h3>
-                    <input type="text" placeholder="Your Name*" required aria-label="Your name">
-                    <input type="email" placeholder="Your Email*" required aria-label="Your email">
-                    <select aria-label="Subject">
-                        <option value="">Select Subject</option>
-                        <option>Prayer Request</option>
-                        <option>General Inquiry</option>
-                        <option>Ministry Interest</option>
-                        <option>Volunteering</option>
-                    </select>
-                    <textarea placeholder="Your Message*" required aria-label="Your message"></textarea>
-                    <button class="btn btn-primary" style="width:100%;"><i class="fas fa-paper-plane"></i> Send Message</button>
+                <!-- LEFT: WhatsApp Button + Email -->
+                <div class="glass-card contact-form reveal" style="text-align:center;">
+                    <h3 style="font-family:var(--font-heading);letter-spacing:0.5px;margin-bottom:1rem;">Send Us a Message</h3>
+                    <p style="margin-bottom:1.5rem;color:var(--text-secondary);">Tap the button below to chat with us on WhatsApp</p>
+                    <a href="https://wa.me/233546296391?text=Hello%20JITM%20Church%2C%20I%20have%20a%20question" 
+                       class="btn btn-primary" 
+                       target="_blank" 
+                       style="text-decoration:none;display:inline-flex;align-items:center;gap:8px;">
+                       <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                    </a>
+                    <p style="margin-top:1.5rem;color:var(--text-muted);font-size:0.9rem;">
+                        Or email us at <strong>info@jitmchurch.org</strong>
+                    </p>
                 </div>
+                <!-- RIGHT: Address (unchanged) -->
                 <div class="reveal reveal-delay-1">
                     <div class="map-placeholder">
                         <div style="text-align:center;">
